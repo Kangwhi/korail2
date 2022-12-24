@@ -923,7 +923,8 @@ When the train allows waiting, enroll for the waiting list instead of failing in
         if passengers is None:
             passengers = [AdultPassenger()]
 
-        print(train)
+        if self.want_feedback:
+            print(train)
 
         passengers = Passenger.reduce(passengers)
         cnt = reduce(lambda x,y: x + y.count, passengers, 0)
