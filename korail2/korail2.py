@@ -296,6 +296,7 @@ class Ticket(Train):
 
         self.car_no = _get_utf8(raw_data, 'h_srcar_no')
         self.seat_no = _get_utf8(raw_data, 'h_seat_no')
+        self.rsv_id = _get_utf8(raw_data, 'h_pnr_no')  # 예약번호
 
     def __repr__(self):
         repr_str = super(Train, self).__repr__()
