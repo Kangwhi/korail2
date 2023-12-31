@@ -6,6 +6,7 @@
     :copyright: (c) 2014 by Taehoon Kim.
     :license: BSD, see LICENSE for more details.
 """
+import time as time_
 import re
 import requests
 import itertools
@@ -700,6 +701,7 @@ When you want change ID using existing object,
                 # 마지막 열차시간에 1분 더해서 계속 검색.
                 t = last_dep_time + min1
                 dep_time = t.strftime("%H%M%S")
+                time_.sleep(0.5)
             except NoResultsError:
                 break
 
