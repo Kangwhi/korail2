@@ -770,6 +770,7 @@ There are 4 types of Passengers now, AdultPassenger, ChildPassenger, ToddlerPass
             'txtGoHour': time,  # '071500',
             'txtGoStart': dep,
             'txtJobDv': '',
+            'adjStnScdlOfrFlg': 'N',
             'txtMenuId': '11',
             'txtPsgFlg_1': adult_count,  # 어른
             'txtPsgFlg_2': child_count,  # 어린이
@@ -781,7 +782,6 @@ There are 4 types of Passengers now, AdultPassenger, ChildPassenger, ToddlerPass
             'txtSeatAttCd_3': '000',
             'txtSeatAttCd_4': '015',
             'txtTrnGpCd': train_type,
-
             'Version': self._version,
         }
 
